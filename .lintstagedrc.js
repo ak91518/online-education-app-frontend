@@ -1,14 +1,6 @@
 module.exports = {
-  "*.ts": [
-    () => "tsc --skipLibCheck --noEmit",
-    "npm run lint",
-    "npm run format",
-  ],
-  "*.tsx": [
-    () => "tsc --skipLibCheck --noEmit",
-    "npm run lint",
-    "npm run format",
-  ],
+  "*.ts": [() => "tsc", "npm run lint", "npm run format"],
+  "*.tsx": [() => "tsc", "npm run lint", "npm run format"],
   "*.js": ["npm run lint", "npm run format"],
   "*.jsx": ["npm run lint", "npm run format"],
   "*.html": ["npm run format"],
